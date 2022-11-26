@@ -19,11 +19,11 @@ const Team2 = () => {
         </div>
       </div>
       <div className="container-fluid center">
-        <div className="row">
+        <div className="row justify-center align-center">
           <div className="col-lg-3 col-md-6">
             <div className="item cir md-mb50">
               <div className="img">
-                <img src="/img/team/satyam.jpeg" alt="" />
+                <img src="/img/team/satyam2.jpeg" alt="" />
                 <div id="circle1">
                   <svg
                     version="1.1"
@@ -61,7 +61,7 @@ const Team2 = () => {
           <div className="col-lg-3 col-md-6">
             <div className="item cir md-mb50">
               <div className="img">
-                <img src="/img/team/2.jpg" alt="" />
+                <img src="/img/team/shubam.jpg" alt="" />
                 <div id="circle2">
                   <svg
                     version="1.1"
@@ -84,9 +84,7 @@ const Team2 = () => {
                     <g>
                       <use xlinkHref="#circlePath2" fill="none" />
                       <text fill="#fff">
-                        <textPath xlinkHref="#circlePath2">
-                          Co Founder
-                        </textPath>
+                        <textPath xlinkHref="#circlePath2">Co Founder</textPath>
                       </text>
                     </g>
                   </svg>

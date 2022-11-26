@@ -14,7 +14,7 @@ const Video2 = () => {
     >
       {typeof window !== "undefined" && (
         <ModalVideo
-          channel="vimeo"
+          channel="youtube"
           autoplay
           isOpen={isOpen}
           videoId="zikA1wu8XuU"

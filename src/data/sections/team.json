@@ -2,9 +2,9 @@
   "teams": [
     {
       "id": 1,
-      "image": "/img/team/1.jpg",
-      "title": "Stephanie Lawrence",
-      "sub": "CEO, Colabrio Media"
+      "image": "/img/team/satyam2.jpeg",
+      "title": "Satyam",
+      "sub": "Founder"
     },
     {
       "id": 2,
@@ -14,9 +14,9 @@
     },
     {
       "id": 3,
-      "image": "/img/team/3.jpg",
-      "title": "Stacey Stamper",
-      "sub": "CEO, Colabrio Media"
+      "image": "/img/team/shubam.jpg",
+      "title": "Shubam",
+      "sub": "Co-Founder"
     },
     {
       "id": 4,
@@ -28,13 +28,13 @@
   "skills": [
     {
       "id": 1,
-      "text": "UI / UX Design",
+      "text": "Indian",
       "value": "90%"
     },
     {
       "id": 2,
-      "text": "Apps Development",
-      "value": "80%"
+      "text": "Western",
+      "value": "90%"
     }
   ]
 }

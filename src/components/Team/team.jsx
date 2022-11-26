@@ -24,12 +24,12 @@ const Team = () => {
                 <span></span>
               </div>
               <h3 className="co-tit mb-15">
-                We help to create visual strategies.
+                An original team of creators dancers & dreamers.
               </h3>
-              <p>
+              {/* <p>
                 We are Vie. We create award-winning websites, remarkable brands
                 and cutting-edge apps.Nullam imperdie.
-              </p>
+              </p> */}
               <div className="skills-box mt-40">
                 {teamsDate.skills.map((skill) => (
                   <div className="skill-item" key={skill.id}>
@@ -47,7 +47,7 @@ const Team = () => {
               <div className="row">
                 <div className="col-sm-6 toright">
                   <div className="full-width">
-                    {teamsDate.teams.slice(0, 2).map((team, index) => (
+                    {teamsDate.teams.slice(0, 1).map((team, index) => (
                       <div key={team.id}>
                         <div
                           className={`img sizxl ${
@@ -66,7 +66,7 @@ const Team = () => {
                 </div>
                 <div className="col-sm-6 toleft valign">
                   <div className="full-width text-left">
-                    {teamsDate.teams.slice(2, 4).map((team, index) => (
+                    {teamsDate.teams.slice(2, 3).map((team, index) => (
                       <div key={team.id}>
                         <div
                           className={`img sizxl ${
