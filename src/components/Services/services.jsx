@@ -46,7 +46,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.IPV4 ? ipAddress.IPV4 : ip}</h6>
+                <h6>IpV$ - {ipAddress?.IPV4 ? ipAddress.IPV4 : ip}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
@@ -55,7 +55,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.city}</h6>
+                <h6>City - {ipAddress?.city}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
@@ -64,7 +64,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.country_code}</h6>
+                <h6>Country Code - {ipAddress?.country_code}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
@@ -75,7 +75,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.country_name}</h6>
+                <h6>Country - {ipAddress?.country_name}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
@@ -84,7 +84,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.postal}</h6>
+                <h6>Postal - {ipAddress?.postal}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
@@ -93,7 +93,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>{ipAddress?.state}</h6>
+                <h6>State - {ipAddress?.state}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
