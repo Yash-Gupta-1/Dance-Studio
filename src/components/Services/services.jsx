@@ -46,7 +46,7 @@ const Services = ({ style, lines }) => {
                 <span className={`icon`}></span>
               </div>
               <div className="cont">
-                <h6>IpV$ - {ipAddress?.IPV4 ? ipAddress.IPV4 : ip}</h6>
+                <h6>Ip - {ipAddress?.IPV4 ? ipAddress.IPV4 : ip}</h6>
                 {/* <p>{feature.content}</p> */}
               </div>
             </div>
