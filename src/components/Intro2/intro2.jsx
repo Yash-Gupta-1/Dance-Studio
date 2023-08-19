@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Link from "next/link";
 
 const Intro2 = ({ sliderRef }) => {
   return (
@@ -10,27 +9,27 @@ const Intro2 = ({ sliderRef }) => {
           <div className="col-lg-6 valign">
             <div className="cont md-mb50">
               <div className="sub-title mb-5">
-                <h6>Big Think Dance Studio</h6>
+                <h6>System Details</h6>
               </div>
-              <h1 className="mb-10 fw-600">Unique Forms of Dance</h1>
+              <h1 className="mb-10 fw-600">System solutions in your hands.</h1>
               <p>
-                We help our students succeed by teaching them new dance forms,
-                different styles, and many more....
+                Ip fetch is a universal app that helps you setup your apps in a
+                beautiful and effective way to get more downloads across
               </p>
-              <Link href={`/about/about-dark`}>
-                <a className="butn bord curve mt-30">
-                  <span>About Us</span>
-                </a>
-              </Link>
             </div>
           </div>
           <div className="col-lg-6">
-            <div className="img">
-              <img
-                src="https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGRhbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                alt=""
-              />
-            </div>
+            <center>
+              <div className="img">
+                <img
+                  style={{ width: 200 }}
+                  src={
+                    "http://clipground.com/images/map-location-clipart-12.png"
+                  }
+                  alt="banner"
+                />
+              </div>
+            </center>
           </div>
         </div>
       </div>

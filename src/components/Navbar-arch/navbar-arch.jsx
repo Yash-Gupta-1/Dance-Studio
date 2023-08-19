@@ -6,7 +6,6 @@ import appData from "../../data/app.json";
 import { handleDropdown, handleMobileDropdown } from "../../common/navbar";
 
 const NavbarArch = ({ navbarRef, theme }) => {
-  
   return (
     <nav className="navbar navbar-expand-lg" ref={navbarRef}>
       <div className="container">
@@ -22,7 +21,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
           )}
         </a>
 
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -35,7 +34,7 @@ const NavbarArch = ({ navbarRef, theme }) => {
           <span className="icon-bar">
             <i className="fas fa-bars"></i>
           </span>
-        </button>
+        </button> */}
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
@@ -48,52 +47,28 @@ const NavbarArch = ({ navbarRef, theme }) => {
                 Home
               </span>
               <div className="dropdown-menu">
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home1-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home1-dark`}>
                   Main Home
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home2-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home2-dark`}>
                   Creative Agency
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home5-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home5-dark`}>
                   Digital Agency
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home4-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home4-dark`}>
                   Business One Page
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home3-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home3-dark`}>
                   Corporate Business
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home6-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home6-dark`}>
                   Modern Agency
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home7-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home7-dark`}>
                   Freelancer
                 </a>
-                <a
-                  className="dropdown-item"
-                  href={`/homepage/home8-dark`}
-                >
+                <a className="dropdown-item" href={`/homepage/home8-dark`}>
                   Architecture
                 </a>
               </div>

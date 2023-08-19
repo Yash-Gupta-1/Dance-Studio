@@ -27,7 +27,7 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
           </a>
         </Link>
 
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -40,7 +40,7 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
           <span className="icon-bar">
             <i className="fas fa-bars"></i>
           </span>
-        </button>
+        </button> */}
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
@@ -94,23 +94,17 @@ const NavbarMobileApp = ({ lr, nr, theme }) => {
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/portfolio-dark">
-              <a className="nav-link" >
-                Portfolio
-              </a>
+                <a className="nav-link">Portfolio</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/mobile-app/shop-dark">
-              <a className="nav-link">
-                Products
-              </a>
+                <a className="nav-link">Products</a>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact/contact-dark">
-              <a className="nav-link" >
-                Contact
-              </a>
+                <a className="nav-link">Contact</a>
               </Link>
             </li>
           </ul>

@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import featuresData from "../../data/sections/features.json";
 
 const Services = ({ style, lines }) => {
+  const [ipAddress, setIPAddress] = useState("");
+  const [ip, setIP] = useState("");
+
+  useEffect(() => {
+    fetch("https://geolocation-db.com/json/")
+      .then((response) => response.json())
+      .then((data) => {
+        setIPAddress(data);
+      })
+      .catch((error) => console.log(error));
+  }, []);
+
+  useEffect(() => {
+    fetch("https://api.ipify.org?format=json")
+      .then((response) => response.json())
+      .then((data) => setIP(data.ip))
+      .catch((error) => console.log(error));
+  }, []);
+
+  console.log("ip addreaa", ipAddress);
   return (
     <section
       className={`services bords section-padding ${
@@ -13,57 +33,71 @@ const Services = ({ style, lines }) => {
           <div className="col-lg-8 col-md-10">
             <div className="sec-head  text-center">
               <h6 className="wow fadeIn" data-wow-delay=".5s">
-                Best Features
+                System Details
               </h6>
-              <h3 className="wow color-font">
-                Experts in different dance forms &amp; Any type of Events Dance
-                Related Choreography here
-              </h3>
+              <h3 className="wow color-font">Get surprised by IP Detail</h3>
             </div>
           </div>
         </div>
         <div className="row">
-          {style === "4item"
-            ? featuresData.map((feature) => (
-                <div
-                  key={feature.id}
-                  className="col-lg-6 wow fadeInLeft"
-                  data-wow-delay={`${
-                    feature.id == 1
-                      ? ".5"
-                      : feature.id === 2
-                      ? ".7"
-                      : feature.id === 3
-                      ? ".9"
-                      : "1.1"
-                  }s`}
-                >
-                  <div className="item-box">
-                    <div>
-                      <span className={`icon ${feature.icon}`}></span>
-                    </div>
-                    <div className="cont">
-                      <h6>{feature.title}</h6>
-                      {/* <p>{feature.content}</p> */}
-                    </div>
-                  </div>
-                </div>
-              ))
-            : // max item 3 in Home page
-              featuresData.slice(0, 3).map((feature) => (
-                <div
-                  key={feature.id}
-                  className="col-lg-4 wow fadeInLeft"
-                  data-wow-delay=".5s"
-                >
-                  <div className="item-box md-mb50">
-                    <span className={`icon ${feature.icon}`}></span>
-                    <span className={`icon ${feature.icon}`}></span>
-                    <h6>{feature.title}</h6>
-                    {/* <p>{feature.content}</p> */}
-                  </div>
-                </div>
-              ))}
+          <div className="col-lg-6 wow fadeInLeft" data-wow-delay={`0.5s`}>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.IPV4 ? ipAddress.IPV4 : ip}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.city}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.country_code}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 wow fadeInLeft" data-wow-delay={`0.5s`}>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.country_name}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.postal}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+            <div className="item-box">
+              <div>
+                <span className={`icon`}></span>
+              </div>
+              <div className="cont">
+                <h6>{ipAddress?.state}</h6>
+                {/* <p>{feature.content}</p> */}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       {lines ? (

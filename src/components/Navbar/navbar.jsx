@@ -17,17 +17,34 @@ const Navbar = ({ lr, nr, theme }) => {
           <a className="logo">
             {theme ? (
               theme === "themeL" ? (
-                <img ref={lr} src={appData.darkLogo} alt="logo" />
+                <img
+                  ref={lr}
+                  src={
+                    "https://webstockreview.net/images/clipart-map-location-sign-12.png"
+                  }
+                  alt="logo"
+                />
               ) : (
-                <img ref={lr} src={appData.lightLogo} alt="logo" />
+                <img
+                  ref={lr}
+                  src={
+                    "https://webstockreview.net/images/clipart-map-location-sign-12.png"
+                  }
+                  alt="logo"
+                />
               )
             ) : (
-              <img ref={lr} src={appData.lightLogo} alt="logo" />
+              <img
+                style={{ filter: "invert(1)" }}
+                ref={lr}
+                src={"https://pluspng.com/img-png/png-location--872.png"}
+                alt="logo"
+              />
             )}
           </a>
         </Link>
 
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           onClick={handleMobileDropdown}
@@ -40,9 +57,9 @@ const Navbar = ({ lr, nr, theme }) => {
           <span className="icon-bar">
             <i className="fas fa-bars"></i>
           </span>
-        </button>
+        </button> */}
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        {/* <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link href={`/`}>
@@ -61,7 +78,7 @@ const Navbar = ({ lr, nr, theme }) => {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
