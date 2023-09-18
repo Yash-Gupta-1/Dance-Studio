@@ -9,7 +9,7 @@ const Services = ({ style, lines }) => {
     fetch("https://geolocation-db.com/json/")
       .then((response) => response.json())
       .then((data) => {
-        setIPAddress({});
+        setIPAddress(data);
       })
       .catch((error) => console.log(error));
   }, []);
@@ -17,11 +17,11 @@ const Services = ({ style, lines }) => {
   useEffect(() => {
     fetch("https://api.ipify.org?format=json")
       .then((response) => response.json())
-      .then((data) => setIP(''))
+      .then((data) => setIP(data?.ip))
       .catch((error) => console.log(error));
   }, []);
 
-  console.log("ip addreaa", ipAddress);
+  console.log("ip addreaa", ipAddress, ip);
   return (
     <section
       className={`services bords section-padding ${
